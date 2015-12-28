@@ -346,7 +346,7 @@ D1_XV
 Text GLabel 3300 2250 1    60   Input ~ 0
 3V3
 Text GLabel 4100 2250 1    60   Input ~ 0
-OP-5V
+OP_V
 Wire Wire Line
 	4100 2250 4100 2450
 Wire Wire Line
