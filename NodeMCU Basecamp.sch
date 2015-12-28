@@ -115,10 +115,10 @@ F 3 "" H 3300 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L R R8
 U 1 1 567DD42C
 P 4100 1200
-F 0 "R3" V 4180 1200 50  0000 C CNN
+F 0 "R8" V 4180 1200 50  0000 C CNN
 F 1 "10K" V 4100 1200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 4030 1200 50  0001 C CNN
 F 3 "" H 4100 1200 50  0000 C CNN
@@ -126,13 +126,13 @@ F 3 "" H 4100 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 1550 0    60   Input ~ 0
-D0_LV_LT
+D0_LV
 Text GLabel 4300 1550 2    60   Input ~ 0
-D0_HV
+D0_XV
 Text GLabel 3300 850  1    60   Input ~ 0
 3V3
 Text GLabel 4100 850  1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	13800 4600 14850 4600
 Wire Wire Line
@@ -197,142 +197,115 @@ Connection ~ 3300 950
 $Comp
 L HEADER_STRIP_15X U3
 U 1 1 567DDD55
-P 14600 1950
-F 0 "U3" H 14600 1000 60  0000 C CNN
-F 1 "DEV_PINS" H 14600 2800 60  0000 C CNN
-F 2 "mplewis:HEADER_STRIP_15X4" V 14900 1900 60  0001 C CNN
-F 3 "" H 14400 2100 60  0000 C CNN
-	1    14600 1950
+P 14000 1900
+F 0 "U3" H 14000 950 60  0000 C CNN
+F 1 "DEV_PINS" H 14000 2750 60  0000 C CNN
+F 2 "mplewis:HEADER_STRIP_15X4" V 14300 1850 60  0001 C CNN
+F 3 "" H 13800 2050 60  0000 C CNN
+	1    14000 1900
 	1    0    0    -1  
 $EndComp
-Text GLabel 14200 1300 0    60   Input ~ 0
+Text GLabel 13600 1250 0    60   Input ~ 0
 D0_XV
-Text GLabel 13850 1400 0    60   Input ~ 0
+Text GLabel 13250 1350 0    60   Input ~ 0
 D1_XV
-Text GLabel 14200 1500 0    60   Input ~ 0
+Text GLabel 13600 1450 0    60   Input ~ 0
 D2_XV
-Text GLabel 13850 1600 0    60   Input ~ 0
+Text GLabel 13250 1550 0    60   Input ~ 0
 D3_XV
-Text GLabel 14200 1700 0    60   Input ~ 0
+Text GLabel 13600 1650 0    60   Input ~ 0
 D4_XV
-Text GLabel 13850 1800 0    60   Input ~ 0
+Text GLabel 13250 1750 0    60   Input ~ 0
 D5_XV
-Text GLabel 14200 1900 0    60   Input ~ 0
+Text GLabel 13600 1850 0    60   Input ~ 0
 D6_XV
-Text GLabel 13850 2000 0    60   Input ~ 0
+Text GLabel 13250 1950 0    60   Input ~ 0
 D7_XV
-Text GLabel 14200 2100 0    60   Input ~ 0
+Text GLabel 13600 2050 0    60   Input ~ 0
 D8_XV
-Text GLabel 13850 2200 0    60   Input ~ 0
+Text GLabel 13250 2150 0    60   Input ~ 0
 RX_XV
-Text GLabel 14200 2300 0    60   Input ~ 0
+Text GLabel 13600 2250 0    60   Input ~ 0
 TX_XV
-Text GLabel 13850 2400 0    60   Input ~ 0
+Text GLabel 13250 2350 0    60   Input ~ 0
 A0_XV
-Text GLabel 14200 2500 0    60   Input ~ 0
+Text GLabel 13600 2450 0    60   Input ~ 0
 EN_XV
-Text GLabel 13850 2600 0    60   Input ~ 0
+Text GLabel 13250 2550 0    60   Input ~ 0
 RST_XV
 Wire Wire Line
-	13850 2600 14400 2600
+	13250 2550 13800 2550
 Wire Wire Line
-	14200 2700 14400 2700
+	13600 2650 13800 2650
 Wire Wire Line
-	14200 2500 14400 2500
+	13600 2450 13800 2450
 Wire Wire Line
-	13850 2400 14400 2400
+	13250 2350 13800 2350
 Wire Wire Line
-	14200 2300 14400 2300
+	13600 2250 13800 2250
 Wire Wire Line
-	13850 2200 14400 2200
+	13250 2150 13800 2150
 Wire Wire Line
-	14400 2100 14200 2100
+	13800 2050 13600 2050
 Wire Wire Line
-	14400 2000 13850 2000
+	13800 1950 13250 1950
 Wire Wire Line
-	14400 1900 14200 1900
+	13800 1850 13600 1850
 Wire Wire Line
-	13850 1800 14400 1800
+	13250 1750 13800 1750
 Wire Wire Line
-	14400 1700 14200 1700
+	13800 1650 13600 1650
 Wire Wire Line
-	13850 1600 14400 1600
+	13250 1550 13800 1550
 Wire Wire Line
-	14400 1500 14200 1500
+	13800 1450 13600 1450
 Wire Wire Line
-	13850 1400 14400 1400
+	13250 1350 13800 1350
 Wire Wire Line
-	14400 1300 14200 1300
-$Comp
-L HEADER_BUS U1
-U 1 1 567DE791
-P 12050 1550
-F 0 "U1" H 12050 1350 60  0000 C CNN
-F 1 "GND_BUS" H 12050 1750 60  0000 C CNN
-F 2 "mplewis:HEADER_BUS_4X2" H 12050 1550 60  0001 C CNN
-F 3 "" H 12050 1550 60  0000 C CNN
-	1    12050 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	11550 1550 11750 1550
+	13800 1250 13600 1250
 $Comp
 L HEADER_BUS U4
-U 1 1 567DEA53
-P 12050 2100
-F 0 "U4" H 12050 1900 60  0000 C CNN
-F 1 "3V3_BUS" H 12050 2300 60  0000 C CNN
-F 2 "mplewis:HEADER_BUS_4X2" H 12050 2100 60  0001 C CNN
-F 3 "" H 12050 2100 60  0000 C CNN
-	1    12050 2100
+U 1 1 567DE791
+P 15450 1350
+F 0 "U4" H 15450 1150 60  0000 C CNN
+F 1 "GND_BUS" H 15450 1550 60  0000 C CNN
+F 2 "mplewis:HEADER_BUS_4X8" H 15450 1350 60  0001 C CNN
+F 3 "" H 15450 1350 60  0000 C CNN
+	1    15450 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 11550 2100 0    60   Input ~ 0
-3V3
 Wire Wire Line
-	11550 2100 11750 2100
+	14950 1350 15150 1350
 $Comp
 L HEADER_BUS U5
-U 1 1 567DEA75
-P 12050 2650
-F 0 "U5" H 12050 2450 60  0000 C CNN
-F 1 "5V_BUS" H 12050 2850 60  0000 C CNN
-F 2 "mplewis:HEADER_BUS_4X2" H 12050 2650 60  0001 C CNN
-F 3 "" H 12050 2650 60  0000 C CNN
-	1    12050 2650
+U 1 1 567DEA53
+P 15450 1900
+F 0 "U5" H 15450 1700 60  0000 C CNN
+F 1 "3V3_BUS" H 15450 2100 60  0000 C CNN
+F 2 "mplewis:HEADER_BUS_4X6" H 15450 1900 60  0001 C CNN
+F 3 "" H 15450 1900 60  0000 C CNN
+	1    15450 1900
 	1    0    0    -1  
 $EndComp
-Text GLabel 11550 2650 0    60   Input ~ 0
+Text GLabel 14950 1900 0    60   Input ~ 0
+3V3
+Wire Wire Line
+	14950 1900 15150 1900
+$Comp
+L HEADER_BUS U6
+U 1 1 567DEA75
+P 15450 2450
+F 0 "U6" H 15450 2250 60  0000 C CNN
+F 1 "5V_BUS" H 15450 2650 60  0000 C CNN
+F 2 "mplewis:HEADER_BUS_4X6" H 15450 2450 60  0001 C CNN
+F 3 "" H 15450 2450 60  0000 C CNN
+	1    15450 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 14950 2450 0    60   Input ~ 0
 5V
 Wire Wire Line
-	11550 2650 11750 2650
-Text GLabel 1250 1350 0    60   Input ~ 0
-D0_XV
-Text GLabel 1600 1450 0    60   Input ~ 0
-D0_LV
-Text GLabel 1250 1550 0    60   Input ~ 0
-D0_LV_LT
-Text GLabel 1600 1250 0    60   Input ~ 0
-D0_HV
-$Comp
-L S_JUMPER_4 U6
-U 1 1 567DF0D8
-P 1950 1350
-F 0 "U6" H 1950 950 60  0000 C CNN
-F 1 "S_JUMPER_4" H 1950 1650 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 1950 1200 60  0001 C CNN
-F 3 "" H 1950 1200 60  0000 C CNN
-	1    1950 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 1250 1600 1250
-Wire Wire Line
-	1250 1350 1750 1350
-Wire Wire Line
-	1750 1450 1600 1450
-Wire Wire Line
-	1250 1550 1750 1550
+	14950 2450 15150 2450
 $Comp
 L BSS138 Q2
 U 1 1 567E0619
@@ -367,13 +340,13 @@ F 3 "" H 4100 2600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 2950 0    60   Input ~ 0
-D1_LV_LT
+D1_LV
 Text GLabel 4300 2950 2    60   Input ~ 0
-D1_HV
+D1_XV
 Text GLabel 3300 2250 1    60   Input ~ 0
 3V3
 Text GLabel 4100 2250 1    60   Input ~ 0
-5V
+OP-5V
 Wire Wire Line
 	4100 2250 4100 2450
 Wire Wire Line
@@ -393,33 +366,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 2350 3650 2650
 Connection ~ 3300 2350
-Text GLabel 1250 2750 0    60   Input ~ 0
-D1_XV
-Text GLabel 1600 2850 0    60   Input ~ 0
-D1_LV
-Text GLabel 1250 2950 0    60   Input ~ 0
-D1_LV_LT
-Text GLabel 1600 2650 0    60   Input ~ 0
-D1_HV
-$Comp
-L S_JUMPER_4 U7
-U 1 1 567E063E
-P 1950 2750
-F 0 "U7" H 1950 2350 60  0000 C CNN
-F 1 "S_JUMPER_4" H 1950 3050 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 1950 2600 60  0001 C CNN
-F 3 "" H 1950 2600 60  0000 C CNN
-	1    1950 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 2650 1600 2650
-Wire Wire Line
-	1250 2750 1750 2750
-Wire Wire Line
-	1750 2850 1600 2850
-Wire Wire Line
-	1250 2950 1750 2950
 $Comp
 L BSS138 Q3
 U 1 1 567E06B1
@@ -432,10 +378,10 @@ F 3 "" H 3700 4250 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L R R3
 U 1 1 567E06B7
 P 3300 4000
-F 0 "R4" V 3380 4000 50  0000 C CNN
+F 0 "R3" V 3380 4000 50  0000 C CNN
 F 1 "10K" V 3300 4000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 3230 4000 50  0001 C CNN
 F 3 "" H 3300 4000 50  0000 C CNN
@@ -454,13 +400,13 @@ F 3 "" H 4100 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 4350 0    60   Input ~ 0
-D2_LV_LT
+D2_LV
 Text GLabel 4300 4350 2    60   Input ~ 0
-D2_HV
+D2_XV
 Text GLabel 3300 3650 1    60   Input ~ 0
 3V3
 Text GLabel 4100 3650 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	4100 3650 4100 3850
 Wire Wire Line
@@ -480,33 +426,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 3750 3650 4050
 Connection ~ 3300 3750
-Text GLabel 1250 4150 0    60   Input ~ 0
-D2_XV
-Text GLabel 1600 4250 0    60   Input ~ 0
-D2_LV
-Text GLabel 1250 4350 0    60   Input ~ 0
-D2_LV_LT
-Text GLabel 1600 4050 0    60   Input ~ 0
-D2_HV
-$Comp
-L S_JUMPER_4 U8
-U 1 1 567E06D6
-P 1950 4150
-F 0 "U8" H 1950 3750 60  0000 C CNN
-F 1 "S_JUMPER_4" H 1950 4450 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 1950 4000 60  0001 C CNN
-F 3 "" H 1950 4000 60  0000 C CNN
-	1    1950 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 4050 1600 4050
-Wire Wire Line
-	1250 4150 1750 4150
-Wire Wire Line
-	1750 4250 1600 4250
-Wire Wire Line
-	1250 4350 1750 4350
 $Comp
 L BSS138 Q4
 U 1 1 567E079A
@@ -519,10 +438,10 @@ F 3 "" H 3700 5650 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L R R4
 U 1 1 567E07A0
 P 3300 5400
-F 0 "R5" V 3380 5400 50  0000 C CNN
+F 0 "R4" V 3380 5400 50  0000 C CNN
 F 1 "10K" V 3300 5400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 3230 5400 50  0001 C CNN
 F 3 "" H 3300 5400 50  0000 C CNN
@@ -541,13 +460,13 @@ F 3 "" H 4100 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 5750 0    60   Input ~ 0
-D3_LV_LT
+D3_LV
 Text GLabel 4300 5750 2    60   Input ~ 0
-D3_HV
+D3_XV
 Text GLabel 3300 5050 1    60   Input ~ 0
 3V3
 Text GLabel 4100 5050 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	4100 5050 4100 5250
 Wire Wire Line
@@ -567,33 +486,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 5150 3650 5450
 Connection ~ 3300 5150
-Text GLabel 1250 5550 0    60   Input ~ 0
-D3_XV
-Text GLabel 1600 5650 0    60   Input ~ 0
-D3_LV
-Text GLabel 1250 5750 0    60   Input ~ 0
-D3_LV_LT
-Text GLabel 1600 5450 0    60   Input ~ 0
-D3_HV
-$Comp
-L S_JUMPER_4 U9
-U 1 1 567E07BF
-P 1950 5550
-F 0 "U9" H 1950 5150 60  0000 C CNN
-F 1 "S_JUMPER_4" H 1950 5850 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 1950 5400 60  0001 C CNN
-F 3 "" H 1950 5400 60  0000 C CNN
-	1    1950 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 5450 1600 5450
-Wire Wire Line
-	1250 5550 1750 5550
-Wire Wire Line
-	1750 5650 1600 5650
-Wire Wire Line
-	1250 5750 1750 5750
 $Comp
 L BSS138 Q5
 U 1 1 567E0836
@@ -606,10 +498,10 @@ F 3 "" H 3700 7050 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L R R5
 U 1 1 567E083C
 P 3300 6800
-F 0 "R6" V 3380 6800 50  0000 C CNN
+F 0 "R5" V 3380 6800 50  0000 C CNN
 F 1 "10K" V 3300 6800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 3230 6800 50  0001 C CNN
 F 3 "" H 3300 6800 50  0000 C CNN
@@ -628,13 +520,13 @@ F 3 "" H 4100 6800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 7150 0    60   Input ~ 0
-D4_LV_LT
+D4_LV
 Text GLabel 4300 7150 2    60   Input ~ 0
-D4_HV
+D4_XV
 Text GLabel 3300 6450 1    60   Input ~ 0
 3V3
 Text GLabel 4100 6450 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	4100 6450 4100 6650
 Wire Wire Line
@@ -654,33 +546,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 6550 3650 6850
 Connection ~ 3300 6550
-Text GLabel 1250 6950 0    60   Input ~ 0
-D4_XV
-Text GLabel 1600 7050 0    60   Input ~ 0
-D4_LV
-Text GLabel 1250 7150 0    60   Input ~ 0
-D4_LV_LT
-Text GLabel 1600 6850 0    60   Input ~ 0
-D4_HV
-$Comp
-L S_JUMPER_4 U10
-U 1 1 567E085B
-P 1950 6950
-F 0 "U10" H 1950 6550 60  0000 C CNN
-F 1 "S_JUMPER_4" H 1950 7250 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 1950 6800 60  0001 C CNN
-F 3 "" H 1950 6800 60  0000 C CNN
-	1    1950 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 6850 1600 6850
-Wire Wire Line
-	1250 6950 1750 6950
-Wire Wire Line
-	1750 7050 1600 7050
-Wire Wire Line
-	1250 7150 1750 7150
 $Comp
 L BSS138 Q6
 U 1 1 567E104F
@@ -693,10 +558,10 @@ F 3 "" H 3700 8450 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L R R6
 U 1 1 567E1055
 P 3300 8200
-F 0 "R7" V 3380 8200 50  0000 C CNN
+F 0 "R6" V 3380 8200 50  0000 C CNN
 F 1 "10K" V 3300 8200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 3230 8200 50  0001 C CNN
 F 3 "" H 3300 8200 50  0000 C CNN
@@ -715,13 +580,13 @@ F 3 "" H 4100 8200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 8550 0    60   Input ~ 0
-D5_LV_LT
+D5_LV
 Text GLabel 4300 8550 2    60   Input ~ 0
-D5_HV
+D5_XV
 Text GLabel 3300 7850 1    60   Input ~ 0
 3V3
 Text GLabel 4100 7850 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	4100 7850 4100 8050
 Wire Wire Line
@@ -741,33 +606,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 7950 3650 8250
 Connection ~ 3300 7950
-Text GLabel 1250 8350 0    60   Input ~ 0
-D5_XV
-Text GLabel 1600 8450 0    60   Input ~ 0
-D5_LV
-Text GLabel 1250 8550 0    60   Input ~ 0
-D5_LV_LT
-Text GLabel 1600 8250 0    60   Input ~ 0
-D5_HV
-$Comp
-L S_JUMPER_4 U11
-U 1 1 567E1074
-P 1950 8350
-F 0 "U11" H 1950 7950 60  0000 C CNN
-F 1 "S_JUMPER_4" H 1950 8650 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 1950 8200 60  0001 C CNN
-F 3 "" H 1950 8200 60  0000 C CNN
-	1    1950 8350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 8250 1600 8250
-Wire Wire Line
-	1250 8350 1750 8350
-Wire Wire Line
-	1750 8450 1600 8450
-Wire Wire Line
-	1250 8550 1750 8550
 $Comp
 L BSS138 Q7
 U 1 1 567E107E
@@ -780,10 +618,10 @@ F 3 "" H 3700 9850 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L R R7
 U 1 1 567E1084
 P 3300 9600
-F 0 "R8" V 3380 9600 50  0000 C CNN
+F 0 "R7" V 3380 9600 50  0000 C CNN
 F 1 "10K" V 3300 9600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 3230 9600 50  0001 C CNN
 F 3 "" H 3300 9600 50  0000 C CNN
@@ -802,13 +640,13 @@ F 3 "" H 4100 9600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3100 9950 0    60   Input ~ 0
-D6_LV_LT
+D6_LV
 Text GLabel 4300 9950 2    60   Input ~ 0
-D6_HV
+D6_XV
 Text GLabel 3300 9250 1    60   Input ~ 0
 3V3
 Text GLabel 4100 9250 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	4100 9250 4100 9450
 Wire Wire Line
@@ -828,33 +666,6 @@ Wire Wire Line
 Wire Wire Line
 	3650 9350 3650 9650
 Connection ~ 3300 9350
-Text GLabel 1250 9750 0    60   Input ~ 0
-D6_XV
-Text GLabel 1600 9850 0    60   Input ~ 0
-D6_LV
-Text GLabel 1250 9950 0    60   Input ~ 0
-D6_LV_LT
-Text GLabel 1600 9650 0    60   Input ~ 0
-D6_HV
-$Comp
-L S_JUMPER_4 U12
-U 1 1 567E10A3
-P 1950 9750
-F 0 "U12" H 1950 9350 60  0000 C CNN
-F 1 "S_JUMPER_4" H 1950 10050 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 1950 9600 60  0001 C CNN
-F 3 "" H 1950 9600 60  0000 C CNN
-	1    1950 9750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 9650 1600 9650
-Wire Wire Line
-	1250 9750 1750 9750
-Wire Wire Line
-	1750 9850 1600 9850
-Wire Wire Line
-	1250 9950 1750 9950
 $Comp
 L BSS138 Q8
 U 1 1 567E10AD
@@ -867,10 +678,10 @@ F 3 "" H 8300 1450 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R17
+L R R15
 U 1 1 567E10B3
 P 7900 1200
-F 0 "R17" V 7980 1200 50  0000 C CNN
+F 0 "R15" V 7980 1200 50  0000 C CNN
 F 1 "10K" V 7900 1200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7830 1200 50  0001 C CNN
 F 3 "" H 7900 1200 50  0000 C CNN
@@ -889,13 +700,13 @@ F 3 "" H 8700 1200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7700 1550 0    60   Input ~ 0
-D7_LV_LT
+D7_LV
 Text GLabel 8900 1550 2    60   Input ~ 0
-D7_HV
+D7_XV
 Text GLabel 7900 850  1    60   Input ~ 0
 3V3
 Text GLabel 8700 850  1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	8700 850  8700 1050
 Wire Wire Line
@@ -915,33 +726,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 950  8250 1250
 Connection ~ 7900 950 
-Text GLabel 5850 1350 0    60   Input ~ 0
-D7_XV
-Text GLabel 6200 1450 0    60   Input ~ 0
-D7_LV
-Text GLabel 5850 1550 0    60   Input ~ 0
-D7_LV_LT
-Text GLabel 6200 1250 0    60   Input ~ 0
-D7_HV
-$Comp
-L S_JUMPER_4 U13
-U 1 1 567E10D2
-P 6550 1350
-F 0 "U13" H 6550 950 60  0000 C CNN
-F 1 "S_JUMPER_4" H 6550 1650 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 6550 1200 60  0001 C CNN
-F 3 "" H 6550 1200 60  0000 C CNN
-	1    6550 1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 1250 6200 1250
-Wire Wire Line
-	5850 1350 6350 1350
-Wire Wire Line
-	6350 1450 6200 1450
-Wire Wire Line
-	5850 1550 6350 1550
 $Comp
 L BSS138 Q9
 U 1 1 567E10DC
@@ -954,10 +738,10 @@ F 3 "" H 8300 2850 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R18
+L R R16
 U 1 1 567E10E2
 P 7900 2600
-F 0 "R18" V 7980 2600 50  0000 C CNN
+F 0 "R16" V 7980 2600 50  0000 C CNN
 F 1 "10K" V 7900 2600 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7830 2600 50  0001 C CNN
 F 3 "" H 7900 2600 50  0000 C CNN
@@ -976,13 +760,13 @@ F 3 "" H 8700 2600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7700 2950 0    60   Input ~ 0
-D8_LV_LT
+D8_LV
 Text GLabel 8900 2950 2    60   Input ~ 0
-D8_HV
+D8_XV
 Text GLabel 7900 2250 1    60   Input ~ 0
 3V3
 Text GLabel 8700 2250 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	8700 2250 8700 2450
 Wire Wire Line
@@ -1002,33 +786,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 2350 8250 2650
 Connection ~ 7900 2350
-Text GLabel 5850 2750 0    60   Input ~ 0
-D8_XV
-Text GLabel 6200 2850 0    60   Input ~ 0
-D8_LV
-Text GLabel 5850 2950 0    60   Input ~ 0
-D8_LV_LT
-Text GLabel 6200 2650 0    60   Input ~ 0
-D8_HV
-$Comp
-L S_JUMPER_4 U14
-U 1 1 567E1101
-P 6550 2750
-F 0 "U14" H 6550 2350 60  0000 C CNN
-F 1 "S_JUMPER_4" H 6550 3050 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 6550 2600 60  0001 C CNN
-F 3 "" H 6550 2600 60  0000 C CNN
-	1    6550 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 2650 6200 2650
-Wire Wire Line
-	5850 2750 6350 2750
-Wire Wire Line
-	6350 2850 6200 2850
-Wire Wire Line
-	5850 2950 6350 2950
 $Comp
 L BSS138 Q10
 U 1 1 567E110B
@@ -1041,10 +798,10 @@ F 3 "" H 8300 4250 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R19
+L R R17
 U 1 1 567E1111
 P 7900 4000
-F 0 "R19" V 7980 4000 50  0000 C CNN
+F 0 "R17" V 7980 4000 50  0000 C CNN
 F 1 "10K" V 7900 4000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7830 4000 50  0001 C CNN
 F 3 "" H 7900 4000 50  0000 C CNN
@@ -1063,13 +820,13 @@ F 3 "" H 8700 4000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7700 4350 0    60   Input ~ 0
-RX_LV_LT
+RX_LV
 Text GLabel 8900 4350 2    60   Input ~ 0
-RX_HV
+RX_XV
 Text GLabel 7900 3650 1    60   Input ~ 0
 3V3
 Text GLabel 8700 3650 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	8700 3650 8700 3850
 Wire Wire Line
@@ -1089,33 +846,6 @@ Wire Wire Line
 Wire Wire Line
 	8250 3750 8250 4050
 Connection ~ 7900 3750
-Text GLabel 5850 4150 0    60   Input ~ 0
-RX_XV
-Text GLabel 6200 4250 0    60   Input ~ 0
-RX_LV
-Text GLabel 5850 4350 0    60   Input ~ 0
-RX_LV_LT
-Text GLabel 6200 4050 0    60   Input ~ 0
-RX_HV
-$Comp
-L S_JUMPER_4 U15
-U 1 1 567E1130
-P 6550 4150
-F 0 "U15" H 6550 3750 60  0000 C CNN
-F 1 "S_JUMPER_4" H 6550 4450 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 6550 4000 60  0001 C CNN
-F 3 "" H 6550 4000 60  0000 C CNN
-	1    6550 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 4050 6200 4050
-Wire Wire Line
-	5850 4150 6350 4150
-Wire Wire Line
-	6350 4250 6200 4250
-Wire Wire Line
-	5850 4350 6350 4350
 $Comp
 L BSS138 Q11
 U 1 1 567E5A58
@@ -1128,10 +858,10 @@ F 3 "" H 8350 5650 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R20
+L R R18
 U 1 1 567E5A5E
 P 7950 5400
-F 0 "R20" V 8030 5400 50  0000 C CNN
+F 0 "R18" V 8030 5400 50  0000 C CNN
 F 1 "10K" V 7950 5400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7880 5400 50  0001 C CNN
 F 3 "" H 7950 5400 50  0000 C CNN
@@ -1150,13 +880,13 @@ F 3 "" H 8750 5400 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7750 5750 0    60   Input ~ 0
-TX_LV_LT
+TX_LV
 Text GLabel 8950 5750 2    60   Input ~ 0
-TX_HV
+TX_XV
 Text GLabel 7950 5050 1    60   Input ~ 0
 3V3
 Text GLabel 8750 5050 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	8750 5050 8750 5250
 Wire Wire Line
@@ -1176,33 +906,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 5150 8300 5450
 Connection ~ 7950 5150
-Text GLabel 5900 5550 0    60   Input ~ 0
-TX_XV
-Text GLabel 6250 5650 0    60   Input ~ 0
-TX_LV
-Text GLabel 5900 5750 0    60   Input ~ 0
-TX_LV_LT
-Text GLabel 6250 5450 0    60   Input ~ 0
-TX_HV
-$Comp
-L S_JUMPER_4 U16
-U 1 1 567E5A7D
-P 6600 5550
-F 0 "U16" H 6600 5150 60  0000 C CNN
-F 1 "S_JUMPER_4" H 6600 5850 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 6600 5400 60  0001 C CNN
-F 3 "" H 6600 5400 60  0000 C CNN
-	1    6600 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 5450 6250 5450
-Wire Wire Line
-	5900 5550 6400 5550
-Wire Wire Line
-	6400 5650 6250 5650
-Wire Wire Line
-	5900 5750 6400 5750
 $Comp
 L BSS138 Q12
 U 1 1 567E5A87
@@ -1215,10 +918,10 @@ F 3 "" H 8350 7050 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R21
+L R R19
 U 1 1 567E5A8D
 P 7950 6800
-F 0 "R21" V 8030 6800 50  0000 C CNN
+F 0 "R19" V 8030 6800 50  0000 C CNN
 F 1 "10K" V 7950 6800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7880 6800 50  0001 C CNN
 F 3 "" H 7950 6800 50  0000 C CNN
@@ -1237,13 +940,13 @@ F 3 "" H 8750 6800 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7750 7150 0    60   Input ~ 0
-EN_LV_LT
+EN_LV
 Text GLabel 8950 7150 2    60   Input ~ 0
-EN_HV
+EN_XV
 Text GLabel 7950 6450 1    60   Input ~ 0
 3V3
 Text GLabel 8750 6450 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	8750 6450 8750 6650
 Wire Wire Line
@@ -1263,33 +966,6 @@ Wire Wire Line
 Wire Wire Line
 	8300 6550 8300 6850
 Connection ~ 7950 6550
-Text GLabel 5900 6950 0    60   Input ~ 0
-EN_XV
-Text GLabel 6250 7050 0    60   Input ~ 0
-EN_LV
-Text GLabel 5900 7150 0    60   Input ~ 0
-EN_LV_LT
-Text GLabel 6250 6850 0    60   Input ~ 0
-EN_HV
-$Comp
-L S_JUMPER_4 U17
-U 1 1 567E5AAC
-P 6600 6950
-F 0 "U17" H 6600 6550 60  0000 C CNN
-F 1 "S_JUMPER_4" H 6600 7250 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 6600 6800 60  0001 C CNN
-F 3 "" H 6600 6800 60  0000 C CNN
-	1    6600 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 6850 6250 6850
-Wire Wire Line
-	5900 6950 6400 6950
-Wire Wire Line
-	6400 7050 6250 7050
-Wire Wire Line
-	5900 7150 6400 7150
 $Comp
 L BSS138 Q13
 U 1 1 567E5AB6
@@ -1302,10 +978,10 @@ F 3 "" H 8350 8450 50  0000 L CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R22
+L R R20
 U 1 1 567E5ABC
 P 7950 8200
-F 0 "R22" V 8030 8200 50  0000 C CNN
+F 0 "R20" V 8030 8200 50  0000 C CNN
 F 1 "10K" V 7950 8200 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 7880 8200 50  0001 C CNN
 F 3 "" H 7950 8200 50  0000 C CNN
@@ -1324,13 +1000,13 @@ F 3 "" H 8750 8200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7750 8550 0    60   Input ~ 0
-RST_LV_LT
+RST_LV
 Text GLabel 8950 8550 2    60   Input ~ 0
-RST_HV
+RST_XV
 Text GLabel 7950 7850 1    60   Input ~ 0
 3V3
 Text GLabel 8750 7850 1    60   Input ~ 0
-5V
+OP_V
 Wire Wire Line
 	8750 7850 8750 8050
 Wire Wire Line
@@ -1350,38 +1026,11 @@ Wire Wire Line
 Wire Wire Line
 	8300 7950 8300 8250
 Connection ~ 7950 7950
-Text GLabel 5900 8350 0    60   Input ~ 0
-RST_XV
-Text GLabel 6250 8450 0    60   Input ~ 0
-RST_LV
-Text GLabel 5900 8550 0    60   Input ~ 0
-RST_LV_LT
-Text GLabel 6250 8250 0    60   Input ~ 0
-RST_HV
 $Comp
-L S_JUMPER_4 U18
-U 1 1 567E5ADB
-P 6600 8350
-F 0 "U18" H 6600 7950 60  0000 C CNN
-F 1 "S_JUMPER_4" H 6600 8650 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 6600 8200 60  0001 C CNN
-F 3 "" H 6600 8200 60  0000 C CNN
-	1    6600 8350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6400 8250 6250 8250
-Wire Wire Line
-	5900 8350 6400 8350
-Wire Wire Line
-	6400 8450 6250 8450
-Wire Wire Line
-	5900 8550 6400 8550
-$Comp
-L R R15
+L R R21
 U 1 1 567E6D83
 P 8150 9400
-F 0 "R15" V 8230 9400 50  0000 C CNN
+F 0 "R21" V 8230 9400 50  0000 C CNN
 F 1 "33K" V 8150 9400 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 8080 9400 50  0001 C CNN
 F 3 "" H 8150 9400 50  0000 C CNN
@@ -1389,10 +1038,10 @@ F 3 "" H 8150 9400 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R16
+L R R22
 U 1 1 567E719B
 P 8500 9750
-F 0 "R16" V 8580 9750 50  0000 C CNN
+F 0 "R22" V 8580 9750 50  0000 C CNN
 F 1 "68K" V 8500 9750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0402" V 8430 9750 50  0001 C CNN
 F 3 "" H 8500 9750 50  0000 C CNN
@@ -1400,10 +1049,10 @@ F 3 "" H 8500 9750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR1
+L Earth #PWR01
 U 1 1 567E7992
 P 8500 10000
-F 0 "#PWR1" H 8500 9750 50  0001 C CNN
+F 0 "#PWR01" H 8500 9750 50  0001 C CNN
 F 1 "Earth" H 8500 9850 50  0001 C CNN
 F 2 "" H 8500 10000 50  0000 C CNN
 F 3 "" H 8500 10000 50  0000 C CNN
@@ -1411,21 +1060,21 @@ F 3 "" H 8500 10000 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR3
+L Earth #PWR02
 U 1 1 567E7D56
-P 11550 1550
-F 0 "#PWR3" H 11550 1300 50  0001 C CNN
-F 1 "Earth" H 11550 1400 50  0001 C CNN
-F 2 "" H 11550 1550 50  0000 C CNN
-F 3 "" H 11550 1550 50  0000 C CNN
-	1    11550 1550
+P 14950 1350
+F 0 "#PWR02" H 14950 1100 50  0001 C CNN
+F 1 "Earth" H 14950 1200 50  0001 C CNN
+F 2 "" H 14950 1350 50  0000 C CNN
+F 3 "" H 14950 1350 50  0000 C CNN
+	1    14950 1350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR6
+L Earth #PWR03
 U 1 1 567E8440
 P 14400 5300
-F 0 "#PWR6" H 14400 5050 50  0001 C CNN
+F 0 "#PWR03" H 14400 5050 50  0001 C CNN
 F 1 "Earth" H 14400 5150 50  0001 C CNN
 F 2 "" H 14400 5300 50  0000 C CNN
 F 3 "" H 14400 5300 50  0000 C CNN
@@ -1433,10 +1082,10 @@ F 3 "" H 14400 5300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR4
+L Earth #PWR04
 U 1 1 567E8540
 P 11750 5300
-F 0 "#PWR4" H 11750 5050 50  0001 C CNN
+F 0 "#PWR04" H 11750 5050 50  0001 C CNN
 F 1 "Earth" H 11750 5150 50  0001 C CNN
 F 2 "" H 11750 5300 50  0000 C CNN
 F 3 "" H 11750 5300 50  0000 C CNN
@@ -1446,10 +1095,10 @@ $EndComp
 Wire Wire Line
 	12050 5400 12300 5400
 $Comp
-L Earth #PWR2
+L Earth #PWR05
 U 1 1 567E8B51
 P 11350 4900
-F 0 "#PWR2" H 11350 4650 50  0001 C CNN
+F 0 "#PWR05" H 11350 4650 50  0001 C CNN
 F 1 "Earth" H 11350 4750 50  0001 C CNN
 F 2 "" H 11350 4900 50  0000 C CNN
 F 3 "" H 11350 4900 50  0000 C CNN
@@ -1457,10 +1106,10 @@ F 3 "" H 11350 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR7
+L Earth #PWR06
 U 1 1 567E8D71
 P 14850 4600
-F 0 "#PWR7" H 14850 4350 50  0001 C CNN
+F 0 "#PWR06" H 14850 4350 50  0001 C CNN
 F 1 "Earth" H 14850 4450 50  0001 C CNN
 F 2 "" H 14850 4600 50  0000 C CNN
 F 3 "" H 14850 4600 50  0000 C CNN
@@ -1468,22 +1117,22 @@ F 3 "" H 14850 4600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR5
+L Earth #PWR07
 U 1 1 567E93F4
-P 14200 2700
-F 0 "#PWR5" H 14200 2450 50  0001 C CNN
-F 1 "Earth" H 14200 2550 50  0001 C CNN
-F 2 "" H 14200 2700 50  0000 C CNN
-F 3 "" H 14200 2700 50  0000 C CNN
-	1    14200 2700
+P 13600 2650
+F 0 "#PWR07" H 13600 2400 50  0001 C CNN
+F 1 "Earth" H 13600 2500 50  0001 C CNN
+F 2 "" H 13600 2650 50  0000 C CNN
+F 3 "" H 13600 2650 50  0000 C CNN
+	1    13600 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8500 9900 8500 10000
 Text GLabel 8750 9400 2    60   Input ~ 0
-A0_LV_LT
+A0_STEPDOWN
 Text GLabel 7750 9400 0    60   Input ~ 0
-A0_HV
+A0_XV
 Wire Wire Line
 	8300 9400 8750 9400
 Wire Wire Line
@@ -1491,48 +1140,39 @@ Wire Wire Line
 Connection ~ 8500 9400
 Wire Wire Line
 	7750 9400 8000 9400
-Text GLabel 5900 9750 0    60   Input ~ 0
-A0_XV
-Text GLabel 6250 9850 0    60   Input ~ 0
+$Comp
+L JS202011CQN U1
+U 1 1 5680C463
+P 11100 2050
+F 0 "U1" H 11100 1700 60  0000 C CNN
+F 1 "JS202011CQN" H 11100 2400 60  0000 C CNN
+F 2 "mplewis:JS202011CQN" H 11100 1950 60  0001 C CNN
+F 3 "" H 11100 1950 60  0000 C CNN
+	1    11100 2050
+	1    0    0    -1  
+$EndComp
+Text GLabel 10650 1950 0    60   Input ~ 0
+OP_V
+Text GLabel 11600 1850 2    60   Input ~ 0
+3V3
+Text GLabel 11600 2000 2    60   Input ~ 0
+5V
+Wire Wire Line
+	11400 1850 11600 1850
+Wire Wire Line
+	11600 2000 11400 2000
+Wire Wire Line
+	10850 1950 10650 1950
+Text GLabel 10650 2250 0    60   Input ~ 0
 A0_LV
-Text GLabel 5900 9950 0    60   Input ~ 0
-A0_LV_LT
-Text GLabel 6250 9650 0    60   Input ~ 0
-A0_HV
-$Comp
-L S_JUMPER_4 U19
-U 1 1 567EC353
-P 6600 9750
-F 0 "U19" H 6600 9350 60  0000 C CNN
-F 1 "S_JUMPER_4" H 6600 10050 60  0000 C CNN
-F 2 "mplewis:S_JUMPER_4" H 6600 9600 60  0001 C CNN
-F 3 "" H 6600 9600 60  0000 C CNN
-	1    6600 9750
-	1    0    0    -1  
-$EndComp
+Text GLabel 11600 2150 2    60   Input ~ 0
+A0_XV
+Text GLabel 11600 2300 2    60   Input ~ 0
+A0_STEPDOWN
 Wire Wire Line
-	6400 9650 6250 9650
+	10850 2250 10650 2250
 Wire Wire Line
-	5900 9750 6400 9750
+	11400 2150 11600 2150
 Wire Wire Line
-	6400 9850 6250 9850
-Wire Wire Line
-	5900 9950 6400 9950
-$Comp
-L Earth #PWR?
-U 1 1 567F06E8
-P 15700 1000
-F 0 "#PWR?" H 15700 750 50  0001 C CNN
-F 1 "Earth" H 15700 850 50  0001 C CNN
-F 2 "" H 15700 1000 50  0000 C CNN
-F 3 "" H 15700 1000 50  0000 C CNN
-	1    15700 1000
-	1    0    0    -1  
-$EndComp
-Text GLabel 15800 900  2    60   Input ~ 0
-GND
-Wire Wire Line
-	15800 900  15700 900 
-Wire Wire Line
-	15700 900  15700 1000
+	11600 2300 11400 2300
 $EndSCHEMATC
