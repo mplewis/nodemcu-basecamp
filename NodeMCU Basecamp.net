@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source "/Users/mplewis/Dropbox (Personal)/projectsync/kicad/NodeMCU Basecamp/NodeMCU Basecamp.sch")
-    (date "Sunday, December 27, 2015 'PMt' 09:15:32 PM")
+    (date "Monday, January 18, 2016 'PMt' 10:05:40 PM")
     (tool "Eeschema 4.0.1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -399,7 +399,7 @@
         (pin (num 2) (name ~) (type passive)))))
   (libraries
     (library (logical mplewis)
-      (uri "/Users/mplewis/Dropbox (Personal)/projectsync/kicad/mplewis.lib"))
+      (uri "/Users/mplewis/Dropbox (Personal)/projectsync/kicad/_libs/mplewis/mplewis.lib"))
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
     (library (logical transistors)

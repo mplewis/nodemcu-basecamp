@@ -1,4 +1,4 @@
-update=Friday, December 25, 2015 'PMt' 07:04:23 PM
+update=Monday, December 28, 2015 'PMt' 09:00:31 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=/Users/mplewis/Dropbox (Personal)/projectsync/kicad
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -58,5 +58,5 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=mplewis
-LibName31=open-project
+LibName30=/Users/mplewis/Dropbox (Personal)/projectsync/kicad/_libs/kicadlibrary/open-project
+LibName31=/Users/mplewis/Dropbox (Personal)/projectsync/kicad/_libs/mplewis/mplewis
